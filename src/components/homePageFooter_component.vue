@@ -3,8 +3,9 @@
         <div class="section footer_section hidden">
             <div class="footer_col">
                 <div class="logo">
-                    <a href="#home">
-                        <img src="https://i.ibb.co/pv138pL/logo.png" alt="" />
+                    <a href="#">
+                        <img src="https://i.ibb.co/pv138pL/logo.png" alt="Logo về trang chủ">
+                        <span class="sr-only">Về trang chủ</span>
                     </a>
                 </div>
                 <button class="btn">Xem Thêm</button>
