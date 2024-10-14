@@ -1,7 +1,7 @@
 <template>
     <section class="section about_section hidden">
         <div class="about_img">
-            <img src="../assets/img/joker.jpg" alt="" />
+            <img src="https://i.ibb.co/34Q0xs1/joker.jpg" alt="" />
         </div>
         <div class="about_content">
             <p class="title">PHIM HOT</p>
