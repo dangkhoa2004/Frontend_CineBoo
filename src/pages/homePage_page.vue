@@ -37,6 +37,7 @@ import homePageTheater_component from '../components/homePageTheater_component.v
 import homePageBanner_component from '../components/homePageBanner_component.vue';
 import homePageExplore_component from '../components/homePageExplore_component.vue';
 import homePageFooter_component from '../components/homePageFooter_component.vue';
+import effects from '../assets/script.js';
 
 export default {
   components: {
@@ -49,5 +50,8 @@ export default {
     homePageExplore_component,
     homePageFooter_component
   },
+  mounted() {
+    effects();
+  }
 };
 </script>
