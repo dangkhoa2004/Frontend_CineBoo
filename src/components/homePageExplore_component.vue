@@ -7,19 +7,19 @@
         <div class="explore_wrapper">
             <div class="explore_card">
                 <div class="card_img">
-                    <img src="../assets/img/joker.jpg" alt="" />
+                    <img src="https://i.ibb.co/34Q0xs1/joker.jpg" alt="" />
                     <div class="card_title">JOKER</div>
                 </div>
             </div>
             <div class="explore_card">
                 <div class="card_img">
-                    <img src="../assets/img/domino.jpg" alt="" />
+                    <img src="https://i.ibb.co/ZhFw2qt/domino.jpg" alt="" />
                     <div class="card_title">DOMINO</div>
                 </div>
             </div>
             <div class="explore_card">
                 <div class="card_img">
-                    <img src="../assets/img/kumanthong.jpg" alt="" />
+                    <img src="https://i.ibb.co/r5x8cbg/kumanthong.jpg" alt="" />
                     <div class="card_title">KUMANTHONG</div>
                 </div>
             </div>
@@ -28,6 +28,6 @@
 </template>
 <script>
 export default {
-    
+
 }
 </script>

@@ -46,7 +46,7 @@ a {
 }
 
 .header {
-  background: url(img/bg.jpg);
+  background: url(https://i.ibb.co/j62zV4q/bg.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -412,7 +412,7 @@ nav {
 
 .popular {
   height: 500px;
-  background: url(img/cine.jpg);
+  background: url(https://i.ibb.co/9v9tZ2s/cine.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

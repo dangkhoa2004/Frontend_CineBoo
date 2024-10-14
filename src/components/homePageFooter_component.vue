@@ -4,7 +4,7 @@
             <div class="footer_col">
                 <div class="logo">
                     <a href="#home">
-                        <img src="../assets/img/logo.png" alt="" />
+                        <img src="https://i.ibb.co/pv138pL/logo.png" alt="" />
                     </a>
                 </div>
                 <button class="btn">Xem Thêm</button>

@@ -5,7 +5,7 @@
         <div class="deal_wrapper">
             <div class="deal_card">
                 <div class="card_img">
-                    <img src="../assets/img/fubao.jpg" alt="" />
+                    <img src="https://i.ibb.co/fY1FGpC/fubao.jpg" alt="" />
                     <div class="card_icons">
                         <span><i class="fas fa-heart"></i></span>
                         <span><i class="fas fa-bookmark"></i></span>
@@ -23,7 +23,7 @@
 
             <div class="deal_card">
                 <div class="card_img">
-                    <img src="../assets/img/bocchi.jpg" alt="" />
+                    <img src="https://i.ibb.co/Byfc17s/bocchi.jpg" alt="" />
                     <div class="card_icons">
                         <span><i class="fas fa-heart"></i></span>
                         <span><i class="fas fa-bookmark"></i></span>
@@ -41,7 +41,7 @@
             </div>
             <div class="deal_card">
                 <div class="card_img">
-                    <img src="../assets/img/codauhaomon.jpg" alt="" />
+                    <img src="https://i.ibb.co/QCrsBXD/codauhaomon.jpg" alt="" />
                     <div class="card_icons">
                         <span><i class="fas fa-heart"></i></span>
                         <span><i class="fas fa-bookmark"></i></span>
