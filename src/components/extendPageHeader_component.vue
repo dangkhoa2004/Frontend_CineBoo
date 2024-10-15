@@ -21,7 +21,7 @@
             <button class="btn nav_btn draw-border">Đặt vé ngay</button>
         </nav>
         <section class="section header_section">
-            <h1 class="animate-charcter" style="font-size: 100px;">CineBoo</h1>
+            <h1 class="animate-charcter">CineBoo</h1>
         </section>
     </header>
 </template>
