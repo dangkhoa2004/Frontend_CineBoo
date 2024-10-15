@@ -1,11 +1,11 @@
-import homePage_page from '../pages/homePage_page.vue';
+import moviePage_page from '../pages/moviePage_page.vue';
 
-const homePage_router = [
+const moviePage_router = [
     {
-        path: '/trang-chu',
+        path: '/phim',
         meta: { requiresAuth: false },
         components: {
-            default: homePage_page,
+            default: moviePage_page,
         },
         children: [
             // {
@@ -18,4 +18,4 @@ const homePage_router = [
     },
 ];
 
-export default homePage_router;
+export default moviePage_router;

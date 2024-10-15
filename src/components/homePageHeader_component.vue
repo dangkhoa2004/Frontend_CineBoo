@@ -12,8 +12,8 @@
 </div>
 </div>
 <ul class="links">
-<li><a href="#home">TRANG CHỦ</a></li>
-<li><a href="#movies">PHIM</a></li>
+<li><a href="/trang-chu">TRANG CHỦ</a></li>
+<li><a href="/phim">PHIM</a></li>
 <li><a href="#theater">RẠP</a></li>
 <li><a href="#explore">KHÁM PHÁ</a></li>
 <li><a href="#contact">HỖ TRỢ</a></li>

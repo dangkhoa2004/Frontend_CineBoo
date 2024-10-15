@@ -2,11 +2,13 @@ import { createRouter, createWebHistory } from 'vue-router';
 import { isAuthenticated } from '../services/authService.js';
 import authRoutes from './authRoutes';
 import homePage_router from './homePage_router';
+import moviePage_router from './moviePage_router.js';
 
 const routes = [
     { path: '/', redirect: '/trang-chu' },
     ...authRoutes,
     ...homePage_router,
+    ...moviePage_router,
 ];
 
 

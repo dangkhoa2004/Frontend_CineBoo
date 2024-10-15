@@ -10,7 +10,7 @@
 </div>
 </div>
 <div class="footer_col">
-<h1>CÔNG TY</h1>
+<h1>THÔNG TIN</h1>
 <ul class="footer_links">
 <li><a href="#">Giới thiệu</a></li>
 <li><a href="#">Sự nghiệp</a></li>
@@ -20,7 +20,7 @@
 </ul>
 </div>
 <div class="footer_col">
-<h1>HỢP TÁC VỚI CHÚNG TÔI</h1>
+<h1>HỢP TÁC</h1>
 <ul class="footer_links">
 <li><a href="#">Cổng đối tác</a></li>
 <li><a href="#">Trung tâm đối tác</a></li>
@@ -30,7 +30,7 @@
 </ul>
 </div>
 <div class="footer_col">
-<h1>LIÊN HỆ CHÚNG TÔI</h1>
+<h1>LIÊN HỆ</h1>
 <ul class="footer_links">
 <li><a href="/cineboo@info.com">cineboo@info.com</a></li>
 </ul>
