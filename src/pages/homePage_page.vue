@@ -1,7 +1,5 @@
 <template>
   <div id='stars'></div>
-  <div id='stars2'></div>
-  <div id='stars3'></div>
   <!-- Header -->
   <homePageHeader_page />
   <!-- Booking Form Section -->

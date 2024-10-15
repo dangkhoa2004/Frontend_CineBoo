@@ -1,3 +1,32 @@
+.movie-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.one h1:after {
+    width: 100px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 25px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: var(--purple);
+}
+
+.favorite-icon:hover {
+    color: #ff8a8a;
+}
+
+.notification-icon:hover {
+    color: #ff8a8a;
+}
+
+.download-icon:hover {
+    color: #ff8a8a;
+}
+
 .links a:hover:after {
     width: 100%;
 }
