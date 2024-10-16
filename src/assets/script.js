@@ -53,5 +53,41 @@ export default function effects() {
             }
         });
     });
+    const movieContainer = document.querySelector(".movie-container"),
+        pwShowHide = document.querySelectorAll(".showHidePw"),
+        pwFields = document.querySelectorAll(".password"),
+        signUp = document.querySelector(".movie-signup-link"),
+        login = document.querySelector(".movie-login-link");
+
+    pwShowHide.forEach((eyeIcon) => {
+        eyeIcon.addEventListener("click", () => {
+            pwFields.forEach((pwField) => {
+                if (pwField.type === "password") {
+                    pwField.type = "text";
+
+                    pwShowHide.forEach((icon) => {
+                        icon.classList.replace("uil-eye-slash", "uil-eye");
+                    });
+                } else {
+                    pwField.type = "password";
+
+                    pwShowHide.forEach((icon) => {
+                        icon.classList.replace("uil-eye", "uil-eye-slash");
+                    });
+                }
+            });
+        });
+    });
+
+    // JS code to toggle signup and login form
+    signUp.addEventListener("click", (e) => {
+        e.preventDefault();
+        movieContainer.classList.add("active");
+    });
+
+    login.addEventListener("click", (e) => {
+        e.preventDefault();
+        movieContainer.classList.remove("active");
+    });
 
 }
