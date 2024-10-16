@@ -261,6 +261,10 @@
         display: inline-block;
     }
 
+    /* .hidden {
+        opacity: 1;
+    } */
+
     .body-container-form {
         height: 81vh;
     }

@@ -3,7 +3,7 @@
         <nav>
             <div class="navbar">
                 <div class="logo">
-                    <a href="#">
+                    <a href="/trang-chu">
                         <h2>CINEBOO</h2>
                     </a>
                 </div>
