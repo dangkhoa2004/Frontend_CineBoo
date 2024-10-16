@@ -14,11 +14,11 @@
             <ul class="links">
                 <li><a href="/trang-chu">TRANG CHỦ</a></li>
                 <li><a href="/phim">PHIM</a></li>
-                <li><a href="#theater">RẠP</a></li>
-                <li><a href="#explore">KHÁM PHÁ</a></li>
+                <li><a href="/trang-chu#theater">RẠP</a></li>
+                <li><a href="/trang-chu#explore">KHÁM PHÁ</a></li>
                 <li><a href="#contact">HỖ TRỢ</a></li>
             </ul>
-            <button class="btn nav_btn draw-border">Đặt vé ngay</button>
+            <button class="btn nav_btn draw-border"><a href="/dang-nhap">ĐĂNG NHẬP</a></button>
         </nav>
         <section class="section header_section">
             <h1 class="animate-charcter">CineBoo</h1>

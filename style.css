@@ -42,11 +42,13 @@ h2 {
 }
 
 a {
+    color: black;
     text-decoration: none
 }
 
 .header {
     background: url(src/assets/img/bg.webp);
+    /* background: url(https://i.ibb.co/Q9c6WcY/bg.jpg); */
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat
@@ -85,6 +87,7 @@ nav {
 }
 
 .menu_btn {
+    cursor: pointer;
     font-size: 1.5rem;
     color: var(--text);
     display: none
@@ -141,6 +144,8 @@ nav {
 }
 
 .btn {
+    border-radius: 5px;
+    cursor: pointer;
     padding: .75rem 1.5rem;
     background: var(--before-btn);
     color: var(--text);
@@ -151,6 +156,12 @@ nav {
     line-height: 1.5;
     position: relative;
     transition: color .25s 1s
+}
+
+.btn a {
+    text-decoration: none;
+    color: var(--text);
+    cursor: pointer;
 }
 
 .section {
@@ -414,6 +425,7 @@ nav {
 }
 
 .banner_content {
+    background: var(--text);
     padding: 2rem;
     display: flex;
     gap: 2rem;
@@ -421,7 +433,7 @@ nav {
     justify-content: space-evenly;
     flex-wrap: wrap;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1)
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2)
 }
 
 .banner_card {
@@ -591,4 +603,193 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1.5rem;
+}
+
+.booking-background {
+    height: 200vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.booking-content {
+    color: var(--text);
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.booking-container {
+    display: flex;
+    gap: 20px;
+}
+
+.booking-movie-poster {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.booking-movie-poster img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.booking-movie-poster .btn {
+    position: absolute;
+    border-radius: 5px;
+    bottom: 15px;
+}
+
+.booking-movie-info {
+    width: 650px;
+}
+
+.booking-movie-info h1 {
+    color: white;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: calc(1em / 8);
+    padding: calc(--stroke-width / 2);
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: calc(1em / 16);
+    margin-bottom: 10px;
+}
+
+.booking-movie-meta {
+    display: flex;
+    gap: 10px;
+    color: #ff6a00;
+    font-weight: bold;
+}
+
+.booking-movie-meta span {
+    background-color: white;
+    padding: 3.5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.booking-rating {
+    color: #f39c12;
+}
+
+.booking-movie-details {
+    margin-top: 15px;
+}
+
+.booking-movie-details p {
+    padding: 10px;
+}
+
+.booking-movie-details span {
+    cursor: pointer;
+    display: inline-block;
+    padding: 3.5px;
+    background-color: var(--purple);
+    border-radius: 5px;
+}
+
+.booking-movie-description {
+    padding: 10px;
+    background-color: none;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.booking-movie-description h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.schedule-container {
+    padding-top: 20px;
+}
+
+.schedule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--purple);
+    padding-bottom: 10px;
+}
+
+.booking-movie-description h2 {
+    padding-bottom: 10px;
+    font-size: 26px;
+    margin: 0;
+}
+
+.date-selector {
+    border: none;
+    display: flex;
+    gap: 10px;
+}
+
+.date-selector button {
+    background-color: var(--purple);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.date-selector button.inactive {
+    background-color: white;
+    color: black;
+}
+
+.filter-options {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-options select {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.theater-section {
+    padding: 20px 0;
+}
+
+.theater-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.movie-format {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.time-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.time-buttons button {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.time-buttons button:hover {
+    background-color: var(--purple);
+    color: white;
 }

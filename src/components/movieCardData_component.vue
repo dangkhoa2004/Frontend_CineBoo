@@ -1,6 +1,6 @@
 <template>
     <div class="movie-card">
-        <a href="" class="overlay-link">&nbsp;</a>
+        <a href="/phim/joker-2024" class="overlay-link">&nbsp;</a>
         <div class="movie-image-container">
             <div class="movie-image-wrapper">
                 <img :src="movieImage" :alt="movieTitle">
