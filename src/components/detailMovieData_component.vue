@@ -1,12 +1,6 @@
 <template>
-    <div class="one" style="background-color: black; padding: 25px;">
-        <h1>Joker: Folie à Deux Điên Có Đôi</h1>
-    </div>
     <div class="booking-background">
         <div id="stars"></div>
-        <video class="background-video" autoplay muted loop>
-            <source src="../assets/video/joker.mp4" type="video/mp4">
-        </video>
         <div class="booking-content">
             <div class="booking-container">
                 <div class="booking-movie-poster">
@@ -73,9 +67,10 @@
                     Joker: Điên Có Đôi có suất chiếu đặc biệt từ 03.10.2024 (không áp dụng movie voucher) và khởi chiếu
                     chính thức 04.10.2024 tại rạp chiếu phim toàn quốc.
                 </p>
+                <div id="lich-chieu"></div>
                 <div class="schedule-container">
                     <div class="schedule-header">
-                        <h2 id="lich-chieu">Lịch Chiếu</h2>
+                        <h2>Lịch Chiếu</h2>
                         <div class="date-selector">
                             <button>Hôm Nay <br> 16/10</button>
                             <button class="inactive">Thứ Năm <br> 17/10</button>
@@ -129,9 +124,25 @@
                         </div>
                     </div>
                 </div>
+                <div id="chon-ghe"></div>
+                <div class="schedule-container">
+                    <div class="schedule-header">
+                        <h2>CHỌN GHẾ</h2>
+                        <div class="date-selector">
+                            <button>TẤT CẢ</button>
+                            <button class="inactive">GHẾ VIP</button>
+                            <button class="inactive">GHẾ THƯỜNG</button>
+                        </div>
+                    </div>
+                    <chooseSeatData_component />
+                </div>
             </div>
         </div>
     </div>
 </template>
-
-<style scoped></style>
+<script>
+import chooseSeatData_component from '../components/chooseSeatData_component.vue'
+export default {
+    components: { chooseSeatData_component }
+}
+</script>

@@ -76,3 +76,8 @@
 .socials a:hover {
     opacity: 1;
 }
+
+.time-buttons button:hover {
+    background-color: var(--purple);
+    color: white;
+}
