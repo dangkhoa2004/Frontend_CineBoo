@@ -17,8 +17,9 @@
                 <li><a href="#theater">RẠP</a></li>
                 <li><a href="#explore">KHÁM PHÁ</a></li>
                 <li><a href="#contact">HỖ TRỢ</a></li>
+                <li class="mobile-login"><a href="/dang-nhap">ĐĂNG NHẬP</a></li>
             </ul>
-            <button class="btn nav_btn draw-border"><a href="/dang-nhap">ĐĂNG NHẬP</a></button>
+            <button class="btn nav_btn draw-border desktop-login"><a href="/dang-nhap">ĐĂNG NHẬP</a></button>
         </nav>
         <section class="section header_section">
             <p>Nhanh chóng - Tiện lợi - Ưu đãi</p>

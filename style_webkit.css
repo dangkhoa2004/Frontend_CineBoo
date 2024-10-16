@@ -23,12 +23,20 @@
 }
 
 @media (max-width: 576px) {
+    .booking-background {
+        grid-template-columns: repeat(1, 1fr)
+    }
+
     .footer_section {
         grid-template-columns: repeat(1, 1fr)
     }
 }
 
 @media (max-width: 768px) {
+    .booking-background {
+        grid-template-columns: repeat(1, 1fr)
+    }
+
     .popular_content {
         grid-column: 1/3
     }
@@ -65,15 +73,174 @@
 }
 
 @media (max-width: 576px) {
+    .one {
+        padding-top: 50px;
+    }
+
+    .movie-card-content {
+        min-height: 190px;
+    }
+
+    .movie-grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1.5rem;
+    }
+
     .deal_wrapper {
         grid-template-columns: repeat(1, 1fr)
     }
 }
 
 @media (max-width: 768px) {
+    .one {
+        padding-top: 50px;
+    }
+
+    .movie-card-content {
+        min-height: 190px;
+    }
+
+    .movie-grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .footer h1 {
+        font-size: 20px;
+        color: white;
+    }
+
+    .footer_section {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem 1rem
+    }
+
+    .footer_col .desc {
+        margin-block: 2rem
+    }
+
+    .footer_col h4 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #fff
+    }
+
+    .footer_links {
+        margin-top: 1rem;
+        list-style: none;
+        display: grid;
+        gap: 1rem
+    }
+
+    .footer_links a {
+        color: var(--text);
+        transition: .3s
+    }
+
+    .deal_card {
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1)
+    }
+
+    .card_img {
+        max-height: 200px;
+    }
+
+    .card_img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about_img img {
+        width: 250px;
+        height: 400px;
+    }
+
+    .booking-content {
+        padding-top: 100px;
+    }
+
+    .booking-container {
+        display: inline;
+    }
+
+    .booking-movie-meta {
+        padding: 2px;
+        gap: 0.5;
+    }
+
+    .booking-movie-details p {
+        padding: 2px;
+    }
+
+    .booking-movie-details span {
+        padding: 0.5px;
+    }
+
+    .booking-content h1 {
+        font-size: 24px;
+    }
+
+    .booking-movie-info {
+        padding-top: 50px;
+        width: auto;
+    }
+
+    .booking-background img {
+        max-width: 100%;
+    }
+
+    .schedule-container {
+        padding: 15px;
+    }
+
+    .date-selector button {
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    .filter-options {
+        padding-top: 15px;
+    }
+
+    .schedule-header {
+        flex-flow: column;
+    }
+
+    .time-buttons {
+        flex-flow: column;
+    }
+
+    .movie_seat-seats {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .movie_seat-seat {
+        width: 15px;
+        height: 15px;
+        background: white;
+        border-radius: 5px;
+        padding: 0;
+    }
+
+    .movie_seat-price .btn {
+        display: flex;
+        align-items: flex-start;
+    }
+
     nav {
         position: fixed;
-        padding: 0
+        padding: 0;
     }
 
     .navbar {
@@ -83,7 +250,19 @@
     }
 
     .menu_btn {
-        display: block
+        display: flex;
+    }
+
+    .desktop-login {
+        display: none;
+    }
+
+    .mobile-login {
+        display: inline-block;
+    }
+
+    .body-container-form {
+        height: 81vh;
     }
 
     .links {

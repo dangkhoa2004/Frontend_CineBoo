@@ -68,7 +68,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 9
+    z-index: 1;
 }
 
 .navbar h1 {
@@ -80,6 +80,15 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between
+}
+
+.mobile-login {
+    display: none;
+}
+
+/* Chỉ hiển thị nút đăng nhập khi màn hình lớn */
+.desktop-login {
+    display: inline-block;
 }
 
 .logo {
@@ -573,6 +582,7 @@ nav {
 }
 
 .scroll-to-top.show {
+    z-index: 1;
     opacity: 1;
     visibility: visible
 }
@@ -603,6 +613,80 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1.5rem;
+}
+
+.movie-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.overlay-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+}
+
+.movie-image-container {
+    overflow: hidden;
+}
+
+.movie-image-wrapper {
+    height: 11rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-image-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.movie-card-content {
+    min-height: 139px;
+    background-color: white;
+    padding: 1rem;
+}
+
+.movie-card-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.movie-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie-card-description {
+    font-size: 0.875rem;
+    color: #718096;
+}
+
+.notification-icon {
+    color: #ff6b6b;
+    transition: color 0.3s ease;
+}
+
+.movie-rating {
+    font-size: 0.875rem;
+    color: #718096;
+    margin-top: 0.5rem;
+}
+
+.movie-details {
+    font-size: 0.75rem;
+    color: #4a5568;
+    margin-top: 0.5rem;
 }
 
 .booking-background {
@@ -799,7 +883,6 @@ nav {
     max-height: 96vh;
     overflow: auto;
     background: white;
-    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 .movie_seat-selector {
