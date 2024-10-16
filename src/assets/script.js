@@ -4,6 +4,7 @@ export default function effects() {
         let menuBtn = document.querySelector(".menu_btn");
         let navLinks = document.querySelector(".links");
         let menuBtnIcon = document.querySelector(".menu_btn i");
+
         if (menuBtn && navLinks && menuBtnIcon) {
             menuBtn.addEventListener("click", () => {
                 navLinks.classList.toggle("open");
@@ -18,6 +19,7 @@ export default function effects() {
 
         const elements = document.querySelectorAll('.section');
         const scrollToTopButton = document.getElementById("scrollToTop");
+
         if (scrollToTopButton) {
             scrollToTopButton.addEventListener("click", () => {
                 window.scrollTo({
@@ -53,41 +55,43 @@ export default function effects() {
             }
         });
     });
+
     const movieContainer = document.querySelector(".movie-container"),
         pwShowHide = document.querySelectorAll(".showHidePw"),
         pwFields = document.querySelectorAll(".password"),
         signUp = document.querySelector(".movie-signup-link"),
         login = document.querySelector(".movie-login-link");
 
-    pwShowHide.forEach((eyeIcon) => {
-        eyeIcon.addEventListener("click", () => {
-            pwFields.forEach((pwField) => {
-                if (pwField.type === "password") {
-                    pwField.type = "text";
-
-                    pwShowHide.forEach((icon) => {
-                        icon.classList.replace("uil-eye-slash", "uil-eye");
-                    });
-                } else {
-                    pwField.type = "password";
-
-                    pwShowHide.forEach((icon) => {
-                        icon.classList.replace("uil-eye", "uil-eye-slash");
-                    });
-                }
+    if (pwShowHide.length > 0) {
+        pwShowHide.forEach((eyeIcon) => {
+            eyeIcon.addEventListener("click", () => {
+                pwFields.forEach((pwField) => {
+                    if (pwField.type === "password") {
+                        pwField.type = "text";
+                        pwShowHide.forEach((icon) => {
+                            icon.classList.replace("uil-eye-slash", "uil-eye");
+                        });
+                    } else {
+                        pwField.type = "password";
+                        pwShowHide.forEach((icon) => {
+                            icon.classList.replace("uil-eye", "uil-eye-slash");
+                        });
+                    }
+                });
             });
         });
-    });
+    }
 
-    // JS code to toggle signup and login form
-    signUp.addEventListener("click", (e) => {
-        e.preventDefault();
-        movieContainer.classList.add("active");
-    });
+    // toggle signup and login form
+    if (signUp && login && movieContainer) {
+        signUp.addEventListener("click", (e) => {
+            e.preventDefault();
+            movieContainer.classList.add("active");
+        });
 
-    login.addEventListener("click", (e) => {
-        e.preventDefault();
-        movieContainer.classList.remove("active");
-    });
-
+        login.addEventListener("click", (e) => {
+            e.preventDefault();
+            movieContainer.classList.remove("active");
+        });
+    }
 }
