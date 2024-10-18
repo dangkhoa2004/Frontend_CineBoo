@@ -743,19 +743,13 @@ nav {
 .booking-movie-meta {
     display: flex;
     gap: 10px;
-    color: #ff6a00;
     font-weight: bold;
 }
 
 .booking-movie-meta span {
-    background-color: white;
     padding: 3.5px;
     border-radius: 5px;
     font-size: 14px;
-}
-
-.booking-rating {
-    color: #f39c12;
 }
 
 .booking-movie-details {
@@ -763,13 +757,13 @@ nav {
 }
 
 .booking-movie-details p {
-    padding: 10px;
+    padding: 15px;
 }
 
 .booking-movie-details span {
     cursor: pointer;
     display: inline-block;
-    padding: 3.5px;
+    padding: 5px;
     background-color: var(--purple);
     border-radius: 5px;
 }
@@ -855,7 +849,7 @@ nav {
 }
 
 .time-buttons button {
-    background-color: #f5f5f5;
+    background-color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -1024,4 +1018,262 @@ nav {
 .movie_seat-total span {
     font-size: 11px;
     font-weight: 400;
+}
+
+.ticket {
+    padding-top: 20px;
+    color: white;
+}
+
+.movie-info,
+.seat-info,
+.total-info,
+.combo-info {
+    margin: 10px 0;
+}
+
+.movie-info,
+.seat-info,
+.combo-info p {
+    font-size: 18px;
+}
+
+
+.dotted-line {
+    border-top: 1px white;
+    margin: 10px 0;
+}
+
+.price,
+.total-price {
+    float: right;
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.total-info p {
+    font-size: 20px;
+}
+
+.total-price {
+    font-size: 20px;
+}
+
+.movie_checkout_details {
+    margin-top: 100px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: none;
+    transition: transform 1s ease, box-shadow 5s ease;
+}
+
+.movie_checkout_details__item {
+    display: flex;
+}
+
+.movie_checkout_item__details {
+    padding: 30px;
+}
+
+.movie_checkout_item__title {
+    font-size: 28px;
+}
+
+.movie_checkout_navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0 80px 0;
+    color: var(--purple);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.movie_checkout_container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.movie_checkout_shadow {
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+.movie_checkout_row {
+    display: flex;
+}
+
+.txt {
+    border-color: #e1e8ee;
+    width: 100%;
+}
+
+.movie_checkout_input {
+    border: 3px solid white;
+    display: initial;
+    padding: 15px;
+    background: none;
+    width: 300px;
+    border-radius: 5px;
+    height: 48px;
+    font-size: 16px;
+    color: white;
+}
+
+.movie_checkout_title {
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+.movie_checkout_field {
+    padding-top: 15px;
+    padding-right: 30px;
+}
+
+.movie_checkout_field.small {
+    width: auto;
+}
+
+.movie_checkout_notification {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.movie_checkout_actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 0 40px 0;
+}
+
+.movie_checkout_payment__title {
+    margin: 40px 0 20px 0;
+    font-size: 20px;
+    display: flex;
+    text-align: left;
+}
+
+.movie_checkout_payment__types {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie_checkout_payment__type {
+    display: flex;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.movie_checkout_payment__type:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.movie_checkout_payment__type.active {
+    background: none;
+    border-color: var(--purple);
+}
+
+.movie_checkout_payment__type+.movie_checkout_payment__type {
+    margin-left: 10px;
+}
+
+.fixed {
+    color: black;
+    border-radius: 15px;
+    background-color: white;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    padding: 10px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    transform: translate(-50%, -50%) translateY(15px);
+}
+
+.fixed .ticket {
+    color: black;
+}
+
+.fixed .movie-info,
+.seat-info,
+.combo-info p {
+    font-size: 13px;
+}
+
+.fixed .movie_checkout_item__details {
+    width: 100%;
+}
+
+.fixed .movie_checkout_iphone {
+    height: 100%;
+    border-radius: 15px;
+}
+
+.fixed .movie_checkout_item__title {
+    font-size: 14px;
+}
+
+.fixed .movie_checkout_item__image {
+    width: 30%;
+}
+
+.list-for-combo {
+    padding-top: 50px;
+}
+
+.combo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.combo-image {
+    border-radius: 5px;
+    width: 150px;
+    height: 84.39px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.combo-details {
+    flex-grow: 1;
+}
+
+.combo-details p {
+    font-size: 17px;
+}
+
+.combo-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.combo-quantity button {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.combo-quantity span {
+    margin: 0 10px;
+    font-size: 18px;
 }

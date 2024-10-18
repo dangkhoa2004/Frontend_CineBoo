@@ -2,7 +2,6 @@
   <div id='stars'></div>
   <!-- Header -->
   <homePageHeader_page />
-  <!-- <extendPageHeader_component /> -->
   <!-- Booking Form Section -->
   <homePageBooking_component />
   <!-- Hot Movie Section -->
@@ -27,8 +26,6 @@
 </template>
 
 <script>
-import extendPageHeader_component from '../components/extendPageHeader_component.vue';
-
 import homePageHeader_page from '../components/homePageHeader_component.vue';
 import homePageBooking_component from '../components/homePageBooking_component.vue';
 import homePageHotMovie_component from '../components/homePageHotMovie_component.vue';
@@ -41,7 +38,6 @@ import effects from '../assets/script.js';
 
 export default {
   components: {
-    extendPageHeader_component,
     homePageHeader_page,
     homePageBooking_component,
     homePageHotMovie_component,

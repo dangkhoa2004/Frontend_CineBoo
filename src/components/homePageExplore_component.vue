@@ -1,5 +1,5 @@
 <template>
-<div id="explore"></div>
+<div id="kham-pha"></div>
 <section class="section explore_section hidden" id="">
 <p class="title">KHÁM PHÁ</p>
 <h2 class="tagline">Nơi tốt nhất cho bạn có trải nghiệm điện ảnh !</h2>

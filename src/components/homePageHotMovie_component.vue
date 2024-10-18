@@ -13,7 +13,7 @@ cái tên mang tính biểu tượng từ truyện tranh đến màn ảnh rộn
 Phoenix mang đến cho khán giả một Joker cực kì khác biệt, chưa từng có trong lịch sử.
 </p>
 <div class="about_btn">
-<button class="btn">Xem Thêm</button>
+<button class="btn"><a href="/phim/joker-2024">Xem Thêm</a></button>
 </div>
 </div>
 </section>

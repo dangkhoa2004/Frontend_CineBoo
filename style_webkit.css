@@ -67,6 +67,7 @@
 }
 
 @media (max-width: 768px) {
+
     .deal_wrapper {
         grid-template-columns: repeat(2, 1fr)
     }
@@ -93,6 +94,23 @@
 }
 
 @media (max-width: 768px) {
+    .movie_checkout_payment__types {
+        justify-content: normal;
+        align-items: normal;
+    }
+
+    .movie_checkout_item__image {
+        width: 50%;
+    }
+
+    .movie_checkout_payment {
+        width: 50%;
+    }
+
+    .movie_checkout_row {
+        flex-direction: column;
+    }
+
     .one {
         padding-top: 50px;
     }

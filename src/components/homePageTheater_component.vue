@@ -1,5 +1,5 @@
 <template>
-    <div id="theater"></div>
+    <div id="rap-phim"></div>
     <section class="popular" id="">
         <div class="section popular_section hidden">
             <div class="popular_content">

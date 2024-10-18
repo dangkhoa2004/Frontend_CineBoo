@@ -3,13 +3,13 @@
     <span class="fas fa-arrow-up"></span>
   </div>
   <div id='stars'></div>
+  <div id='stars'></div>
   <!-- Header -->
   <onlyPageHeader_component />
   <!-- MOVIE DATA LIST -->
   <router-view />
   <!-- Footer -->
   <onlyPageFooter_component />
-
 </template>
 
 <script>

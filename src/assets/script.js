@@ -1,14 +1,25 @@
 export default function effects() {
 
+    window.addEventListener('scroll', function () {
+        const movieCheckout = document.querySelector('.movie_checkout_details');
+        const targetElement = document.getElementById('time-to-fixed');
+        const targetPosition = targetElement.getBoundingClientRect().top;
+        if (targetPosition <= window.innerHeight) {
+            movieCheckout.classList.add('fixed');
+        } else {
+            movieCheckout.classList.remove('fixed');
+        }
+    });
+
     document.addEventListener('DOMContentLoaded', function () {
-        var menuBtn = document.querySelector(".menu_btn");
-        var navLinks = document.querySelector(".links");
-        var menuBtnIcon = document.querySelector(".menu_btn i");
+        let menuBtn = document.querySelector(".menu_btn");
+        let navLinks = document.querySelector(".links");
+        let menuBtnIcon = document.querySelector(".menu_btn i");
 
         if (menuBtn && navLinks && menuBtnIcon) {
             menuBtn.addEventListener("click", () => {
                 navLinks.classList.toggle("open");
-                var isOpen = navLinks.classList.contains("open");
+                let isOpen = navLinks.classList.contains("open");
                 menuBtnIcon.setAttribute("class", isOpen ? "fas fa-times" : "fas fa-bars");
             });
             navLinks.addEventListener("click", () => {
@@ -17,8 +28,8 @@ export default function effects() {
             });
         }
 
-        var elements = document.querySelectorAll('.section');
-        var scrollToTopButton = document.getElementById("scrollToTop");
+        const elements = document.querySelectorAll('.section');
+        const scrollToTopButton = document.getElementById("scrollToTop");
 
         if (scrollToTopButton) {
             scrollToTopButton.addEventListener("click", () => {
@@ -31,9 +42,9 @@ export default function effects() {
 
         function revealOnScroll() {
             elements.forEach((el) => {
-                var windowHeight = window.innerHeight;
-                var elementTop = el.getBoundingClientRect().top;
-                var revealPoint = 250;
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                const revealPoint = 250;
                 if (elementTop < windowHeight - revealPoint) {
                     el.classList.add('show');
                 } else {
@@ -56,7 +67,7 @@ export default function effects() {
         });
     });
 
-    var movieContainer = document.querySelector(".movie-container"),
+    const movieContainer = document.querySelector(".movie-container"),
         pwShowHide = document.querySelectorAll(".showHidePw"),
         pwFields = document.querySelectorAll(".password"),
         signUp = document.querySelector(".movie-signup-link"),
