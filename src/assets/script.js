@@ -1,14 +1,19 @@
 export default function effects() {
 
-    window.addEventListener('scroll', function () {
+    document.addEventListener('DOMContentLoaded', function () {
         const movieCheckout = document.querySelector('.movie_checkout_details');
         const targetElement = document.getElementById('time-to-fixed');
-        const targetPosition = targetElement.getBoundingClientRect().top;
-        if (targetPosition <= window.innerHeight) {
-            movieCheckout.classList.add('fixed');
-        } else {
-            movieCheckout.classList.remove('fixed');
-        }
+
+        window.addEventListener('scroll', function () {
+            if (targetElement) { // Check if targetElement exists
+                const targetPosition = targetElement.getBoundingClientRect().top;
+                if (targetPosition <= window.innerHeight) {
+                    movieCheckout.classList.add('fixed');
+                } else {
+                    movieCheckout.classList.remove('fixed');
+                }
+            }
+        });
     });
 
     document.addEventListener('DOMContentLoaded', function () {

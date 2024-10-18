@@ -10,6 +10,90 @@
     background: #6D24cf
 }
 
+@keyframes shadowsdancing {
+    0% {
+        box-shadow: inset 30px 0 0 rgba(128, 0, 128, 0.4),
+            inset 0 30px 0 rgba(138, 43, 226, 0.4),
+            inset -30px 0 0 rgba(75, 0, 130, 0.4),
+            inset 0 -30px 0 rgba(148, 0, 211, 0.4);
+    }
+
+    25% {
+        box-shadow: inset 30px 0 0 rgba(186, 85, 211, 0.4),
+            inset 0 30px 0 rgba(128, 0, 128, 0.4),
+            inset -30px 0 0 rgba(147, 44, 238, 0.4),
+            inset 0 -30px 0 rgba(128, 0, 128, 0.4);
+    }
+
+    50% {
+        box-shadow: inset 30px 0 0 rgba(88, 57, 112, 0.4),
+            inset 0 30px 0 rgba(128, 0, 128, 0.4),
+            inset -30px 0 0 rgba(186, 85, 211, 0.4),
+            inset 0 -30px 0 rgba(116, 106, 124, 0.4);
+    }
+
+    75% {
+        box-shadow: inset 30px 0 0 rgba(128, 0, 128, 0.4),
+            inset 0 30px 0 rgba(128, 0, 128, 0.4),
+            inset -30px 0 0 rgba(128, 0, 128, 0.4),
+            inset 0 -30px 0 rgba(128, 0, 128, 0.4);
+    }
+
+    100% {
+        box-shadow: inset 30px 0 0 rgba(128, 0, 128, 0.4),
+            inset 0 30px 0 rgba(128, 0, 128, 0.4),
+            inset -30px 0 0 rgba(128, 0, 128, 0.4),
+            inset 0 -30px 0 rgba(128, 0, 128, 0.4);
+    }
+}
+
+@keyframes colordancing {
+    0% {
+        color: #6b69df;
+    }
+
+    25% {
+        color: #c95489;
+    }
+
+    50% {
+        color: #a06abf;
+        /* Màu tím */
+    }
+
+    75% {
+        color: #b0e6ea;
+    }
+
+    100% {
+        color: #cc82d9;
+    }
+}
+
+@keyframes colordancing2 {
+    0% {
+        color: #a06abf;
+        /* Màu tím */
+    }
+
+    25% {
+        color: #659fe6;
+    }
+
+    50% {
+        color: #d03b8d;
+    }
+
+    75% {
+        color: #f56991;
+    }
+
+    100% {
+        color: #a06abf;
+        /* Màu tím */
+    }
+}
+
 @media (max-width: 768px) {
     .about_section {
         grid-template-columns: repeat(1, 1fr)
@@ -94,6 +178,15 @@
 }
 
 @media (max-width: 768px) {
+    .fixed {
+        width: 100%;
+        position: fixed;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%) translateY(50px);
+    }
+
+
     .movie_checkout_payment__types {
         justify-content: normal;
         align-items: normal;
