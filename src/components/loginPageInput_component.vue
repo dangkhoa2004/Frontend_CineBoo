@@ -4,25 +4,30 @@
             <div class="movie-forms">
                 <div class="movie-form login">
                     <span class="movie-title">ĐĂNG NHẬP</span>
-                    <form action="#">
+                    <form @submit.prevent="login">
                         <div class="movie-input-field">
-                            <input type="text" placeholder="Nhập email của bạn" required />
-                            <i class="uil uil-envelope icon"></i>
+                            <input type="text" placeholder="Nhập email của bạn" v-model="username" />
+                            <!-- Đổi icon ở đây -->
+                            <i class="fas fa-envelope"></i>
                         </div>
                         <div class="movie-input-field">
-                            <input type="password" class="password" placeholder="Nhập mật khẩu của bạn" required />
-                            <i class="uil uil-lock icon"></i>
-                            <i class="uil uil-eye-slash showHidePw"></i>
+                            <input type="password" class="password" placeholder="Nhập mật khẩu của bạn"
+                                v-model="password" />
+                            <!-- Đổi icon ở đây -->
+                            <i class="fas fa-lock"></i>
+                            <i class="fas fa-eye-slash showHidePw"></i>
                         </div>
                         <div class="movie-checkbox-text">
                             <div class="movie-checkbox-content">
                                 <input type="checkbox" id="logCheck" />
                                 <label for="logCheck" class="movie-text">Lưu đăng nhập</label>
                             </div>
-                            <a href="#" class="movie-text">Quên mật khẩu?</a>
+                            <a href="/quen-mat-khau" class="movie-text">Quên mật khẩu?</a>
                         </div>
                         <div class="movie-input-field movie-button">
-                            <input type="button" value="Đăng nhập" />
+                            <button class="btn nav_btn draw-border" style="width: 100%;">
+                                ĐĂNG NHẬP
+                            </button>
                         </div>
                     </form>
                     <div class="movie-login-signup">
@@ -34,29 +39,32 @@
                 <!-- Registration Form -->
                 <div class="movie-form signup">
                     <span class="movie-title">ĐĂNG KÝ</span>
-                    <form action="#">
+                    <form @submit.prevent="signup">
                         <div class="movie-input-field">
                             <input type="text" placeholder="Nhập tên của bạn" required />
-                            <i class="uil uil-user"></i>
+                            <!-- Đổi icon ở đây -->
+                            <i class="fas fa-user"></i>
                         </div>
                         <div class="movie-input-field">
                             <input type="text" placeholder="Nhập email của bạn" required />
-                            <i class="uil uil-envelope icon"></i>
+                            <!-- Đổi icon ở đây -->
+                            <i class="fas fa-envelope"></i>
                         </div>
                         <div class="movie-input-field">
                             <input type="password" class="password" placeholder="Nhập mật khẩu" required />
-                            <i class="uil uil-lock icon"></i>
+                            <!-- Đổi icon ở đây -->
+                            <i class="fas fa-lock"></i>
                         </div>
                         <div class="movie-input-field">
                             <input type="password" class="password" placeholder="Xác nhận mật khẩu" required />
-                            <i class="uil uil-lock icon"></i>
-                            <i class="uil uil-eye-slash showHidePw"></i>
+                            <!-- Đổi icon ở đây -->
+                            <i class="fas fa-lock"></i>
+                            <i class="fas fa-eye-slash showHidePw"></i>
                         </div>
                         <div class="movie-checkbox-text">
                             <div class="movie-checkbox-content">
                                 <input type="checkbox" id="termCon" />
-                                <label for="termCon" class="movie-text">Tôi đã chấp nhận tất cả các điều khoản và
-                                    điều
+                                <label for="termCon" class="movie-text">Tôi đã chấp nhận tất cả các điều khoản và điều
                                     kiện</label>
                             </div>
                         </div>
@@ -75,7 +83,38 @@
         </div>
     </div>
 </template>
+<script>
+import { authService } from '../services/authService';
 
+export default {
+    data() {
+        return {
+            username: '',
+            password: ''
+        };
+    },
+    methods: {
+        login() {
+            authService.login(this.username, this.password)
+                .then(response => {
+                    const token = response.data.token;
+                    const role = response.data.role;
+                    localStorage.setItem('token', token);
+                    console.log('Token:', token, 'Role:', role);
+                    this.$store.dispatch('login', response.data.user);
+                    this.$router.push('/trang-chu');
+                })
+                .catch(error => {
+                    if (error.response && error.response.status === 401) {
+                        alert('Tên đăng nhập hoặc mật khẩu không chính xác.');
+                    } else {
+                        alert('Đã xảy ra lỗi, vui lòng thử lại sau.');
+                    }
+                });
+        }
+    }
+};
+</script>
 <style scoped>
 .extend_header {
     background-color: black;
@@ -225,11 +264,7 @@
 }
 
 .movie-form a:hover {
-    text-decoration: underline;
-}
-
-.movie-form .movie-button {
-    margin-top: 35px;
+    text-decoration: none;
 }
 
 .movie-form .movie-button input {
