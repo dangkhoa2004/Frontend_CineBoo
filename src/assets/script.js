@@ -85,19 +85,21 @@ export default function effects() {
                     if (pwField.type === "password") {
                         pwField.type = "text";
                         pwShowHide.forEach((icon) => {
-                            icon.classList.replace("uil-eye-slash", "uil-eye");
+                            icon.classList.replace("fas", "fas");
+                            icon.classList.replace("fa-eye-slash", "fa-eye");
                         });
                     } else {
                         pwField.type = "password";
                         pwShowHide.forEach((icon) => {
-                            icon.classList.replace("uil-eye", "uil-eye-slash");
+                            icon.classList.replace("fas", "fas");
+                            icon.classList.replace("fa-eye", "fa-eye-slash");
                         });
                     }
                 });
             });
         });
     }
-
+    
     // toggle signup and login form
     if (signUp && login && movieContainer) {
         signUp.addEventListener("click", (e) => {
