@@ -10,20 +10,14 @@
     </div>
 </template>
 
-<script>
+<script setup>
 import onlyPageHeader_component from '../components/onlyPageHeader_component.vue';
 import onlyPageFooter_component from '../components/onlyPageFooter_component.vue';
 import loginPageInput_component from '../components/loginPageInput_component.vue';
-import effects from '../assets/script.js';
-
-export default {
-    components: {
-        onlyPageHeader_component,
-        onlyPageFooter_component,
-        loginPageInput_component
-    },
-    mounted() {
-        effects();
-    }
-};
+import { onMounted } from 'vue';
+import { hideInputPassword,toggleSignUpAndLoginForm } from '../services/loginFormListener.js';
+onMounted(()=>{
+    hideInputPassword();
+    toggleSignUpAndLoginForm();
+})
 </script>
