@@ -24,7 +24,7 @@ import chooseServiceData_component from '../components/chooseServiceData_compone
 import infoMovieData_component from '../components/infoMovieData_component.vue'
 import chooseScheduleData_component from '../components/chooseScheduleData_component.vue'
 import chooseSeatData_component from '../components/chooseSeatData_component.vue'
-import checkoutSeatData_component from './choosePaymentData_component.vue'
+import checkoutSeatData_component from './choosePaymentData_component/choosePaymentData_component.vue';
 export default {
     components: { chooseSeatData_component, checkoutSeatData_component, chooseScheduleData_component, infoMovieData_component, chooseServiceData_component }
 }
