@@ -21,8 +21,8 @@
                         </div>
                         <div class="movie_seat-all-seats">
                             <input type="checkbox" name="tickets" id="s1" />
-                            <label for="s1" class="movie_seat-seat movie_seat-booked"></label>
-                            <div v-for="index in 79" :key="index">
+                            <!-- <label for="s1" class="movie_seat-seat movie_seat-booked"></label> -->
+                            <div v-for="index in 80" :key="index">
                                 <input type="checkbox" name="tickets" :id="'s' + (index + 2)"
                                     v-model="selectedSeats[index]" :disabled="prebookedSeats[index]" />
                                 <label :for="'s' + (index + 2)" class="movie_seat-seat"
